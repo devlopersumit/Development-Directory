@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTooly - Ultimate Developer Resource Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-tools"></i>
+                <span class="gradient-text">DevTooly</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#tools" class="nav-link">Explore Tools</a>
+                <a href="#resources" class="nav-link">Browse Resources</a>
+                <a href="#roadmaps" class="nav-link">Roadmaps</a>
+                <a href="#guides" class="nav-link">Guides</a>
+            </div>
+
+            <!-- <div class="nav-actions">
+                <button class="search-toggle" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div> -->
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <div class="search-header">
+                <i class="fas fa-search"></i>
+                <input type="text" class="search-input" placeholder="Search tools, resources, guides...">
+                <button class="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-results"></div>
+        </div>
+    </div>
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Ultimate Developer Resource Hub</h1>
+            <p class="hero-tagline">One destination for all your development needs</p>
+            <p class="hero-description">Access 100+ carefully curated development tools, resources, roadmaps, and guides - all in one place.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="20">40+</span>
+                    <span class="stat-label">Developer Tools</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="20">10+</span>
+                    <span class="stat-label">Learning Resources</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="20">10+</span>
+                    <span class="stat-label">Career Roadmaps</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="20">10+</span>
+                    <span class="stat-label">Dev Extensions</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#tools" class="btn btn-primary" data-scroll>Explore Tools</a>
+                <a href="#resources" class="btn btn-secondary" data-scroll>Browse Resources</a>
+            </div>
+        </div>
+        <div class="hero-graphics">
+            <div class="gradient-sphere"></div>
+            <div class="code-particles"></div>
+        </div>
+    </section>
+
+    
+
+    <!-- ... rest of the code ... -->
+
+<!-- Tools Section -->
+<section id="tools" class="section">
+    <div class="section-header">
+        <h2>Development Tools</h2>
+        <p>Essential tools to supercharge your development workflow</p>
+    </div>
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="code">Code Editors</button>
+        <button class="filter-btn" data-filter="version">Version Control</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="testing">Testing</button>
+    </div>
+    <div class="card-grid">
+        <!-- Code Editors -->
+        <div class="card" data-category="code">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h3>VS Code</h3>
+            <p>Popular code editor with rich extension ecosystem</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Essential</span>
+            </div>
+            <a href="https://code.visualstudio.com" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="code">
+            <div class="card-icon"><i class="fab fa-sublime-text"></i></div>
+            <h3>Sublime Text</h3>
+            <p>Fast and lightweight text editor</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+            </div>
+            <a href="https://www.sublimetext.com" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="code">
+            <div class="card-icon"><i class="fab fa-java"></i></div>
+            <h3>IntelliJ IDEA</h3>
+            <p>Powerful IDE for Java development</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+            </div>
+            <a href="https://www.jetbrains.com/idea/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Version Control -->
+        <div class="card" data-category="version">
+            <div class="card-icon"><i class="fab fa-github"></i></div>
+            <h3>GitHub Desktop</h3>
+            <p>Simplified Git workflow with GUI</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+            </div>
+            <a href="https://desktop.github.com" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="version">
+            <div class="card-icon"><i class="fab fa-gitlab"></i></div>
+            <h3>GitLab</h3>
+            <p>Complete DevOps platform</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+            </div>
+            <a href="https://gitlab.com" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Design Tools -->
+        <div class="card" data-category="design">
+            <div class="card-icon"><i class="fab fa-figma"></i></div>
+            <h3>Figma</h3>
+            <p>Collaborative interface design tool</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+            </div>
+            <a href="https://www.figma.com" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Testing Tools -->
+        <div class="card" data-category="testing">
+            <div class="card-icon"><i class="fas fa-vial"></i></div>
+            <h3>Jest</h3>
+            <p>JavaScript testing framework</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+            </div>
+            <a href="https://jestjs.io" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Additional Tools -->
+        <div class="card" data-category="code">
+            <div class="card-icon"><i class="fab fa-python"></i></div>
+            <h3>PyCharm</h3>
+            <p>Professional Python IDE</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+            </div>
+            <a href="https://www.jetbrains.com/pycharm/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="design">
+            <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3>Adobe XD</h3>
+            <p>UI/UX design and prototyping tool</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+            </div>
+            <a href="https://www.adobe.com/products/xd.html" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="testing">
+            <div class="card-icon"><i class="fas fa-bug"></i></div>
+            <h3>Postman</h3>
+            <p>API testing and development platform</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+                <span class="tag">Essential</span>
+            </div>
+            <a href="https://www.postman.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="version">
+            <div class="card-icon"><i class="fas fa-code-branch"></i></div>
+            <h3>Sourcetree</h3>
+            <p>Git GUI client for Windows and Mac</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+            </div>
+            <a href="https://www.sourcetreeapp.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- More Development Tools -->
+        <div class="card" data-category="code">
+            <div class="card-icon"><i class="fab fa-android"></i></div>
+            <h3>Android Studio</h3>
+            <p>Official IDE for Android development</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Mobile Dev</span>
+            </div>
+            <a href="https://developer.android.com/studio" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="design">
+            <div class="card-icon"><i class="fas fa-pencil-ruler"></i></div>
+            <h3>Sketch</h3>
+            <p>Digital design toolkit for Mac</p>
+            <div class="card-tags">
+                <span class="tag">Paid</span>
+                <span class="tag">Mac Only</span>
+            </div>
+            <a href="https://www.sketch.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="testing">
+            <div class="card-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Cypress</h3>
+            <p>Modern web testing framework</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">E2E Testing</span>
+            </div>
+            <a href="https://www.cypress.io/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Additional Development Tools -->
+        <div class="card" data-category="cloud">
+            <div class="card-icon"><i class="fas fa-cloud"></i></div>
+            <h3>Terraform</h3>
+            <p>Infrastructure as Code tool</p>
+            <div class="card-tags">
+                <span class="tag">DevOps</span>
+                <span class="tag">Cloud</span>
+            </div>
+            <a href="https://www.terraform.io/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="database">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h3>MongoDB Compass</h3>
+            <p>GUI for MongoDB</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Database</span>
+            </div>
+            <a href="https://www.mongodb.com/products/compass" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="security">
+            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Burp Suite</h3>
+            <p>Web security testing tool</p>
+            <div class="card-tags">
+                <span class="tag">Security</span>
+                <span class="tag">Testing</span>
+            </div>
+            <a href="https://portswigger.net/burp" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- AI Development Tools -->
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-robot"></i></div>
+            <h3>GitHub Copilot</h3>
+            <p>AI pair programmer</p>
+            <div class="card-tags">
+                <span class="tag">Paid</span>
+                <span class="tag">AI</span>
+            </div>
+            <a href="https://github.com/features/copilot" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <h3>Amazon CodeWhisperer</h3>
+            <p>AI code suggestions</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">AI</span>
+            </div>
+            <a href="https://aws.amazon.com/codewhisperer/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Cloud Development Tools -->
+        <div class="card" data-category="cloud">
+            <div class="card-icon"><i class="fab fa-aws"></i></div>
+            <h3>AWS CLI</h3>
+            <p>Command line interface for AWS</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Cloud</span>
+            </div>
+            <a href="https://aws.amazon.com/cli/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="cloud">
+            <div class="card-icon"><i class="fab fa-microsoft"></i></div>
+            <h3>Azure Tools</h3>
+            <p>Microsoft Azure development tools</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Cloud</span>
+            </div>
+            <a href="https://azure.microsoft.com/en-us/tools/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Security Tools -->
+        <div class="card" data-category="security">
+            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>OWASP ZAP</h3>
+            <p>Web application security scanner</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Security</span>
+            </div>
+            <a href="https://www.zaproxy.org/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Database Tools -->
+        <div class="card" data-category="database">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h3>DBeaver</h3>
+            <p>Universal database tool</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Database</span>
+            </div>
+            <a href="https://dbeaver.io/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Additional Learning Resources -->
+        <div class="card" data-category="courses">
+            <div class="card-icon"><i class="fas fa-university"></i></div>
+            <h3>MIT OpenCourseWare</h3>
+            <p>Free MIT courses online</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Academic</span>
+            </div>
+            <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <!-- Specialized Roadmaps -->
+        <div class="card" data-category="specialized">
+            <div class="card-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Blockchain Developer</h3>
+            <p>Complete blockchain development path</p>
+            <div class="card-tags">
+                <span class="tag">2024</span>
+                <span class="tag">Emerging</span>
+            </div>
+            <a href="https://roadmap.sh/blockchain" target="_blank" class="card-link">View Roadmap</a>
+        </div>
+
+        <div class="card" data-category="specialized">
+            <div class="card-icon"><i class="fas fa-vr-cardboard"></i></div>
+            <h3>AR/VR Developer</h3>
+            <p>Augmented and Virtual Reality path</p>
+            <div class="card-tags">
+                <span class="tag">2024</span>
+                <span class="tag">Emerging</span>
+            </div>
+            <a href="https://roadmap.sh/game-developer" target="_blank" class="card-link">View Roadmap</a>
+        </div>
+
+        <!-- Advanced Guides -->
+        <div class="card" data-category="advanced">
+            <div class="card-icon"><i class="fas fa-server"></i></div>
+            <h3>Microservices</h3>
+            <p>Building scalable microservices</p>
+            <div class="card-tags">
+                <span class="tag">Advanced</span>
+                <span class="tag">Architecture</span>
+            </div>
+            <a href="https://microservices.io/" target="_blank" class="card-link">Read Guide</a>
+        </div>
+
+        <!-- Firefox Extensions -->
+        <div class="card" data-category="firefox">
+            <div class="card-icon"><i class="fas fa-fire"></i></div>
+            <h3>Web Developer</h3>
+            <p>Various web development tools</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Essential</span>
+            </div>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/" target="_blank" class="card-link">Get Extension</a>
+        </div>
+
+        <!-- Performance Tools -->
+        <div class="card" data-category="performance">
+            <div class="card-icon"><i class="fas fa-tachometer-alt"></i></div>
+            <h3>Lighthouse</h3>
+            <p>Website performance analysis</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Google</span>
+            </div>
+            <a href="https://developers.google.com/web/tools/lighthouse" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- API Tools -->
+        <div class="card" data-category="api">
+            <div class="card-icon"><i class="fas fa-plug"></i></div>
+            <h3>Insomnia</h3>
+            <p>API design and testing platform</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">API</span>
+            </div>
+            <a href="https://insomnia.rest/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Game Development Tools -->
+        <div class="card" data-category="game-dev">
+            <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+            <h3>Unity</h3>
+            <p>Cross-platform game engine</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Game Dev</span>
+            </div>
+            <a href="https://unity.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="game-dev">
+            <div class="card-icon"><i class="fas fa-cube"></i></div>
+            <h3>Unreal Engine</h3>
+            <p>Advanced 3D game engine</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Game Dev</span>
+            </div>
+            <a href="https://www.unrealengine.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- IoT Development -->
+        <div class="card" data-category="iot">
+            <div class="card-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Arduino IDE</h3>
+            <p>IoT device programming</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">IoT</span>
+            </div>
+            <a href="https://www.arduino.cc/en/software" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="iot">
+            <div class="card-icon"><i class="fas fa-raspberry-pi"></i></div>
+            <h3>Raspberry Pi Imager</h3>
+            <p>OS imaging utility</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">IoT</span>
+            </div>
+            <a href="https://www.raspberrypi.org/software/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Data Science Tools -->
+        <div class="card" data-category="data-science">
+            <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+            <h3>Jupyter Notebook</h3>
+            <p>Interactive computing platform</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Data Science</span>
+            </div>
+            <a href="https://jupyter.org/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="data-science">
+            <div class="card-icon"><i class="fas fa-table"></i></div>
+            <h3>Pandas</h3>
+            <p>Data analysis library</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Python</span>
+            </div>
+            <a href="https://pandas.pydata.org/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Blockchain Development -->
+        <div class="card" data-category="blockchain">
+            <div class="card-icon"><i class="fab fa-ethereum"></i></div>
+            <h3>Truffle Suite</h3>
+            <p>Smart contract development</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Blockchain</span>
+            </div>
+            <a href="https://trufflesuite.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="blockchain">
+            <div class="card-icon"><i class="fas fa-link"></i></div>
+            <h3>Metamask</h3>
+            <p>Ethereum wallet & gateway</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Web3</span>
+            </div>
+            <a href="https://metamask.io/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- DevOps Tools -->
+        <div class="card" data-category="devops">
+            <div class="card-icon"><i class="fab fa-jenkins"></i></div>
+            <h3>Jenkins</h3>
+            <p>Automation server</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">CI/CD</span>
+            </div>
+            <a href="https://www.jenkins.io/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="devops">
+            <div class="card-icon"><i class="fab fa-kubernetes"></i></div>
+            <h3>Kubernetes</h3>
+            <p>Container orchestration</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Container</span>
+            </div>
+            <a href="https://kubernetes.io/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Cybersecurity Tools -->
+        <div class="card" data-category="security">
+            <div class="card-icon"><i class="fas fa-user-secret"></i></div>
+            <h3>Wireshark</h3>
+            <p>Network protocol analyzer</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Network</span>
+            </div>
+            <a href="https://www.wireshark.org/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- AR/VR Development -->
+        <div class="card" data-category="ar-vr">
+            <div class="card-icon"><i class="fas fa-vr-cardboard"></i></div>
+            <h3>ARKit</h3>
+            <p>iOS AR development</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Apple</span>
+            </div>
+            <a href="https://developer.apple.com/augmented-reality/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="card" data-category="mobile">
+            <div class="card-icon"><i class="fab fa-react"></i></div>
+            <h3>React Native</h3>
+            <p>Cross-platform mobile development</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Mobile</span>
+            </div>
+            <a href="https://reactnative.dev/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- Add more tools... -->
+    </div>
+</section>
+
+<!-- Resources Section -->
+<section id="resources" class="section">
+    <div class="section-header">
+        <h2>Learning Resources</h2>
+        <p>Curated collection of the best learning materials</p>
+    </div>
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="docs">Documentation</button>
+        <button class="filter-btn" data-filter="tutorials">Tutorials</button>
+        <button class="filter-btn" data-filter="courses">Courses</button>
+    </div>
+    <div class="card-grid">
+        <!-- Documentation -->
+        <div class="card" data-category="docs">
+            <div class="card-icon"><i class="fas fa-book"></i></div>
+            <h3>MDN Web Docs</h3>
+            <p>Comprehensive web development documentation</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Essential</span>
+            </div>
+            <a href="https://developer.mozilla.org" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <!-- Tutorials -->
+        <div class="card" data-category="tutorials">
+            <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>freeCodeCamp</h3>
+            <p>Interactive coding tutorials and certifications</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+            </div>
+            <a href="https://www.freecodecamp.org" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <!-- Courses -->
+        <div class="card" data-category="courses">
+            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Coursera</h3>
+            <p>Professional courses from top universities</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+            </div>
+            <a href="https://www.coursera.org" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <!-- Additional Resources -->
+        <div class="card" data-category="tutorials">
+            <div class="card-icon"><i class="fas fa-video"></i></div>
+            <h3>Traversy Media</h3>
+            <p>Web development tutorials and courses</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">YouTube</span>
+            </div>
+            <a href="https://www.youtube.com/c/TraversyMedia" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <div class="card" data-category="docs">
+            <div class="card-icon"><i class="fab fa-react"></i></div>
+            <h3>React Documentation</h3>
+            <p>Official React.js documentation</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Essential</span>
+            </div>
+            <a href="https://reactjs.org/docs/getting-started.html" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <div class="card" data-category="courses">
+            <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h3>Udemy</h3>
+            <p>Online courses for various technologies</p>
+            <div class="card-tags">
+                <span class="tag">Paid</span>
+            </div>
+            <a href="https://www.udemy.com" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <!-- Additional Learning Resources -->
+        <div class="card" data-category="courses">
+            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Codecademy</h3>
+            <p>Interactive programming courses</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+                <span class="tag">Interactive</span>
+            </div>
+            <a href="https://www.codecademy.com/" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <div class="card" data-category="tutorials">
+            <div class="card-icon"><i class="fab fa-dev"></i></div>
+            <h3>Dev.to</h3>
+            <p>Community-driven developer content</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Community</span>
+            </div>
+            <a href="https://dev.to/" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <!-- More Learning Resources -->
+        <div class="card" data-category="courses">
+            <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <h3>Frontend Masters</h3>
+            <p>Advanced frontend development courses</p>
+            <div class="card-tags">
+                <span class="tag">Paid</span>
+                <span class="tag">Professional</span>
+            </div>
+            <a href="https://frontendmasters.com/" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <div class="card" data-category="tutorials">
+            <div class="card-icon"><i class="fab fa-youtube"></i></div>
+            <h3>Net Ninja</h3>
+            <p>Web development tutorial series</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">YouTube</span>
+            </div>
+            <a href="https://www.youtube.com/c/TheNetNinja" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <div class="card" data-category="docs">
+            <div class="card-icon"><i class="fab fa-node-js"></i></div>
+            <h3>Node.js Docs</h3>
+            <p>Official Node.js documentation</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Backend</span>
+            </div>
+            <a href="https://nodejs.org/docs" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <!-- Add more resources... -->
+    </div>
+</section>
+
+<!-- Roadmaps Section -->
+<section id="roadmaps" class="section">
+    <div class="section-header">
+        <h2>Career Roadmaps</h2>
+        <p>Clear paths to achieve your development goals</p>
+    </div>
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+    </div>
+    <div class="card-grid">
+        <!-- Frontend -->
+        <div class="card" data-category="frontend">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h3>Frontend Development</h3>
+            <p>Complete path to becoming a frontend developer</p>
+            <div class="card-tags">
+                <span class="tag">2024</span>
+                <span class="tag">Popular</span>
+            </div>
+            <a href="https://roadmap.sh/frontend" target="_blank" class="card-link">View Roadmap</a>
+        </div>
+
+        <!-- Backend -->
+        <div class="card" data-category="backend">
+            <div class="card-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend Development</h3>
+            <p>Guide to becoming a backend developer</p>
+            <div class="card-tags">
+                <span class="tag">2024</span>
+            </div>
+            <a href="https://roadmap.sh/backend" target="_blank" class="card-link">View Roadmap</a>
+        </div>
+
+        <!-- Additional Roadmaps -->
+        <div class="card" data-category="fullstack">
+            <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>MERN Stack</h3>
+            <p>MongoDB, Express, React, Node.js development path</p>
+            <div class="card-tags">
+                <span class="tag">2024</span>
+                <span class="tag">Popular</span>
+            </div>
+            <a href="https://roadmap.sh/full-stack" target="_blank" class="card-link">View Roadmap</a>
+        </div>
+
+        <div class="card" data-category="frontend">
+            <div class="card-icon"><i class="fab fa-react"></i></div>
+            <h3>React Developer</h3>
+            <p>Complete React development roadmap</p>
+            <div class="card-tags">
+                <span class="tag">2024</span>
+            </div>
+            <a href="https://roadmap.sh/react" target="_blank" class="card-link">View Roadmap</a>
+        </div>
+
+        <!-- More Career Roadmaps -->
+        <div class="card" data-category="backend">
+            <div class="card-icon"><i class="fab fa-python"></i></div>
+            <h3>Python Developer</h3>
+            <p>Complete Python development path</p>
+            <div class="card-tags">
+                <span class="tag">2024</span>
+                <span class="tag">Backend</span>
+            </div>
+            <a href="https://roadmap.sh/python" target="_blank" class="card-link">View Roadmap</a>
+        </div>
+
+        <div class="card" data-category="fullstack">
+            <div class="card-icon"><i class="fas fa-cloud"></i></div>
+            <h3>Cloud Developer</h3>
+            <p>AWS, Azure, and GCP development path</p>
+            <div class="card-tags">
+                <span class="tag">2024</span>
+                <span class="tag">Cloud</span>
+            </div>
+            <a href="https://roadmap.sh/devops" target="_blank" class="card-link">View Roadmap</a>
+        </div>
+
+        <!-- Additional Roadmaps -->
+        <div class="card" data-category="fullstack">
+            <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Mobile Developer</h3>
+            <p>iOS and Android development path</p>
+            <div class="card-tags">
+                <span class="tag">2024</span>
+                <span class="tag">Mobile</span>
+            </div>
+            <a href="https://roadmap.sh/android" target="_blank" class="card-link">View Roadmap</a>
+        </div>
+
+        <div class="card" data-category="backend">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h3>Database Expert</h3>
+            <p>SQL and NoSQL mastery path</p>
+            <div class="card-tags">
+                <span class="tag">2024</span>
+                <span class="tag">Data</span>
+            </div>
+            <a href="https://roadmap.sh/postgresql-dba" target="_blank" class="card-link">View Roadmap</a>
+        </div>
+
+        <!-- Add more roadmaps... -->
+    </div>
+</section>
+
+<!-- Guides Section -->
+<section id="guides" class="section">
+    <div class="section-header">
+        <h2>Development Guides</h2>
+        <p>In-depth guides for various development topics</p>
+    </div>
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="basics">Basics</button>
+        <button class="filter-btn" data-filter="advanced">Advanced</button>
+        <button class="filter-btn" data-filter="best-practices">Best Practices</button>
+    </div>
+    <div class="card-grid">
+        <!-- Basic Guides -->
+        <div class="card" data-category="basics">
+            <div class="card-icon"><i class="fas fa-book-open"></i></div>
+            <h3>Git Basics</h3>
+            <p>Essential guide to version control with Git</p>
+            <div class="card-tags">
+                <span class="tag">Beginner</span>
+            </div>
+            <a href="https://www.atlassian.com/git" target="_blank" class="card-link">Read Guide</a>
+        </div>
+
+        <!-- Additional Guides -->
+        <div class="card" data-category="advanced">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h3>SQL Guide</h3>
+            <p>Complete guide to SQL and databases</p>
+            <div class="card-tags">
+                <span class="tag">Advanced</span>
+            </div>
+            <a href="https://www.w3schools.com/sql/" target="_blank" class="card-link">Read Guide</a>
+        </div>
+
+        <div class="card" data-category="best-practices">
+            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Web Security</h3>
+            <p>Best practices for secure web development</p>
+            <div class="card-tags">
+                <span class="tag">Essential</span>
+            </div>
+            <a href="https://owasp.org/www-project-top-ten/" target="_blank" class="card-link">Read Guide</a>
+        </div>
+
+        <!-- More Development Guides -->
+        <div class="card" data-category="basics">
+            <div class="card-icon"><i class="fab fa-js"></i></div>
+            <h3>JavaScript Guide</h3>
+            <p>Complete JavaScript fundamentals</p>
+            <div class="card-tags">
+                <span class="tag">Beginner</span>
+                <span class="tag">Essential</span>
+            </div>
+            <a href="https://javascript.info/" target="_blank" class="card-link">Read Guide</a>
+        </div>
+
+        <div class="card" data-category="advanced">
+            <div class="card-icon"><i class="fas fa-microchip"></i></div>
+            <h3>System Design</h3>
+            <p>Large scale system design principles</p>
+            <div class="card-tags">
+                <span class="tag">Advanced</span>
+                <span class="tag">Architecture</span>
+            </div>
+            <a href="https://github.com/donnemartin/system-design-primer" target="_blank" class="card-link">Read Guide</a>
+        </div>
+
+        <!-- Additional Development Guides -->
+        <div class="card" data-category="best-practices">
+            <div class="card-icon"><i class="fas fa-code-branch"></i></div>
+            <h3>Git Flow Guide</h3>
+            <p>Advanced Git workflow patterns</p>
+            <div class="card-tags">
+                <span class="tag">Advanced</span>
+                <span class="tag">Version Control</span>
+            </div>
+            <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target="_blank" class="card-link">Read Guide</a>
+        </div>
+
+        <!-- Add more guides... -->
+    </div>
+</section>
+
+<!-- Extensions Section -->
+<section id="extensions" class="section">
+    <div class="section-header">
+        <h2>Developer Extensions</h2>
+        <p>Essential browser and editor extensions</p>
+    </div>
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="vscode">VS Code</button>
+        <button class="filter-btn" data-filter="chrome">Chrome</button>
+        <button class="filter-btn" data-filter="firefox">Firefox</button>
+    </div>
+    <div class="card-grid">
+        <!-- VS Code Extensions -->
+        <div class="card" data-category="vscode">
+            <div class="card-icon"><i class="fas fa-puzzle-piece"></i></div>
+            <h3>Live Server</h3>
+            <p>Launch a development local server with live reload</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Popular</span>
+            </div>
+            <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank" class="card-link">Get Extension</a>
+        </div>
+
+        <!-- Additional Extensions -->
+        <div class="card" data-category="vscode">
+            <div class="card-icon"><i class="fas fa-puzzle-piece"></i></div>
+            <h3>Prettier</h3>
+            <p>Code formatter for multiple languages</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Essential</span>
+            </div>
+            <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" class="card-link">Get Extension</a>
+        </div>
+
+        <div class="card" data-category="chrome">
+            <div class="card-icon"><i class="fas fa-tools"></i></div>
+            <h3>React Developer Tools</h3>
+            <p>Debug React applications in Chrome</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">React</span>
+            </div>
+            <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi" target="_blank" class="card-link">Get Extension</a>
+        </div>
+
+        <!-- More Browser Extensions -->
+        <div class="card" data-category="chrome">
+            <div class="card-icon"><i class="fas fa-bug"></i></div>
+            <h3>Redux DevTools</h3>
+            <p>Debug Redux applications state</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Redux</span>
+            </div>
+            <a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd" target="_blank" class="card-link">Get Extension</a>
+        </div>
+
+        <div class="card" data-category="vscode">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h3>ESLint</h3>
+            <p>JavaScript code linting</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Code Quality</span>
+            </div>
+            <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank" class="card-link">Get Extension</a>
+        </div>
+
+        <!-- Additional Tools -->
+        <div class="card" data-category="design">
+            <div class="card-icon"><i class="fas fa-palette"></i></div>
+            <h3>Coolors</h3>
+            <p>Color schemes generator</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Design</span>
+            </div>
+            <a href="https://coolors.co/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="testing">
+            <div class="card-icon"><i class="fas fa-tachometer-alt"></i></div>
+            <h3>GTmetrix</h3>
+            <p>Website performance testing</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+                <span class="tag">Performance</span>
+            </div>
+            <a href="https://gtmetrix.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <!-- More Resources -->
+        <div class="card" data-category="courses">
+            <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Scrimba</h3>
+            <p>Interactive coding courses</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+                <span class="tag">Interactive</span>
+            </div>
+            <a href="https://scrimba.com/" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <div class="card" data-category="docs">
+            <div class="card-icon"><i class="fab fa-vuejs"></i></div>
+            <h3>Vue.js Docs</h3>
+            <p>Official Vue.js documentation</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Frontend</span>
+            </div>
+            <a href="https://vuejs.org/guide/introduction.html" target="_blank" class="card-link">View Resource</a>
+        </div>
+
+        <!-- Additional Browser Extensions -->
+        <div class="card" data-category="chrome">
+            <div class="card-icon"><i class="fas fa-eye"></i></div>
+            <h3>WhatFont</h3>
+            <p>Identify fonts on web pages</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Design</span>
+            </div>
+            <a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm" target="_blank" class="card-link">Get Extension</a>
+        </div>
+
+        <div class="card" data-category="vscode">
+            <div class="card-icon"><i class="fas fa-terminal"></i></div>
+            <h3>GitLens</h3>
+            <p>Git supercharged for VS Code</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Git</span>
+            </div>
+            <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank" class="card-link">Get Extension</a>
+        </div>
+
+        <!-- More VS Code Extensions -->
+        <div class="card" data-category="vscode">
+            <div class="card-icon"><i class="fas fa-boxes"></i></div>
+            <h3>Docker</h3>
+            <p>Docker support for VS Code</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">DevOps</span>
+            </div>
+            <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker" target="_blank" class="card-link">Get Extension</a>
+        </div>
+
+        <!-- More Chrome Extensions -->
+        <div class="card" data-category="chrome">
+            <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3>ColorZilla</h3>
+            <p>Advanced color picker</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Design</span>
+            </div>
+            <a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp" target="_blank" class="card-link">Get Extension</a>
+        </div>
+
+        <!-- Add more extensions... -->
+    </div>
+</section>
+
+<!-- AI Development Tools Section -->
+<section id="ai-tools" class="section">
+    <div class="section-header">
+        <h2>AI Development Tools</h2>
+        <p>Enhance your coding workflow with AI assistance</p>
+    </div>
+    <div class="card-grid">
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-robot"></i></div>
+            <h3>Tabnine</h3>
+            <p>AI code completion for all languages</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+                <span class="tag">AI Assistant</span>
+            </div>
+            <a href="https://www.tabnine.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h3>Codeium</h3>
+            <p>Free AI coding assistant</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">VSCode</span>
+            </div>
+            <a href="https://codeium.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-magic"></i></div>
+            <h3>ChatGPT</h3>
+            <p>AI language model for code assistance</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+                <span class="tag">Popular</span>
+            </div>
+            <a href="https://chat.openai.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <h3>Claude</h3>
+            <p>Advanced AI assistant for coding</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Anthropic</span>
+            </div>
+            <a href="https://claude.ai/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Bard</h3>
+            <p>Google's AI coding assistant</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Google</span>
+            </div>
+            <a href="https://bard.google.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+            <h3>Amazon CodeWhisperer</h3>
+            <p>AI code suggestions and completion</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">AWS</span>
+            </div>
+            <a href="https://aws.amazon.com/codewhisperer/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>Replit Ghost Writer</h3>
+            <p>AI pair programmer in Replit</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+                <span class="tag">IDE</span>
+            </div>
+            <a href="https://replit.com/ghost-writer" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-keyboard"></i></div>
+            <h3>Cursor</h3>
+            <p>AI-first code editor</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Editor</span>
+            </div>
+            <a href="https://cursor.sh/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-code-branch"></i></div>
+            <h3>CodeGeeX</h3>
+            <p>Open-source code completion</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Open Source</span>
+            </div>
+            <a href="https://codegeex.cn/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-bug"></i></div>
+            <h3>Codiga</h3>
+            <p>AI code analysis and suggestions</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+                <span class="tag">Analysis</span>
+            </div>
+            <a href="https://www.codiga.io/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-comments"></i></div>
+            <h3>Phind</h3>
+            <p>AI search engine for developers</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Search</span>
+            </div>
+            <a href="https://www.phind.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-diagram-project"></i></div>
+            <h3>Mintlify</h3>
+            <p>AI documentation writer</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+                <span class="tag">Documentation</span>
+            </div>
+            <a href="https://mintlify.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>DeepCode</h3>
+            <p>AI code review tool</p>
+            <div class="card-tags">
+                <span class="tag">Free</span>
+                <span class="tag">Code Review</span>
+            </div>
+            <a href="https://www.deepcode.ai/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-terminal"></i></div>
+            <h3>Mutable AI</h3>
+            <p>AI code generation and transformation</p>
+            <div class="card-tags">
+                <span class="tag">Paid</span>
+                <span class="tag">Generation</span>
+            </div>
+            <a href="https://mutable.ai/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+
+        <div class="card" data-category="ai">
+            <div class="card-icon"><i class="fas fa-search"></i></div>
+            <h3>Sourcegraph</h3>
+            <p>AI-powered code search and navigation</p>
+            <div class="card-tags">
+                <span class="tag">Freemium</span>
+                <span class="tag">Search</span>
+            </div>
+            <a href="https://sourcegraph.com/" target="_blank" class="card-link">Get Tool</a>
+        </div>
+    </div>
+</section>
+
+<!-- Practice Projects Section -->
+<section id="projects" class="section">
+    <div class="section-header">
+        <h2>Practice Projects</h2>
+        <p>Build real-world projects to enhance your skills</p>
+    </div>
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="beginner">Beginner</button>
+        <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+        <button class="filter-btn" data-filter="advanced">Advanced</button>
+    </div>
+    <div class="card-grid">
+        <!-- Frontend Projects - Beginner -->
+        <div class="card" data-category="frontend beginner">
+            <div class="card-icon"><i class="fas fa-calculator"></i></div>
+            <h3>Calculator App</h3>
+            <p>Build a functional calculator with themes</p>
+            <div class="card-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <a href="#" class="card-link">View Project</a>
+        </div>
+
+        <div class="card" data-category="frontend beginner">
+            <div class="card-icon"><i class="fas fa-tasks"></i></div>
+            <h3>Todo List</h3>
+            <p>Create a todo app with local storage</p>
+            <div class="card-tags">
+                <span class="tag">React</span>
+                <span class="tag">CSS</span>
+            </div>
+            <a href="#" class="card-link">View Project</a>
+        </div>
+
+        <!-- Frontend Projects - Intermediate -->
+        <div class="card" data-category="frontend intermediate">
+            <div class="card-icon"><i class="fas fa-weather-cloud"></i></div>
+            <h3>Weather Dashboard</h3>
+            <p>Weather app with API integration</p>
+            <div class="card-tags">
+                <span class="tag">React</span>
+                <span class="tag">API</span>
+            </div>
+            <a href="#" class="card-link">View Project</a>
+        </div>
+
+        <div class="card" data-category="frontend intermediate">
+            <div class="card-icon"><i class="fas fa-film"></i></div>
+            <h3>Movie Browser</h3>
+            <p>Movie search app with TMDB API</p>
+            <div class="card-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">API</span>
+            </div>
+            <a href="#" class="card-link">View Project</a>
+        </div>
+
+        <!-- Backend Projects - Beginner -->
+        <div class="card" data-category="backend beginner">
+            <div class="card-icon"><i class="fas fa-server"></i></div>
+            <h3>URL Shortener</h3>
+            <p>Build a URL shortening service</p>
+            <div class="card-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+            </div>
+            <a href="#" class="card-link">View Project</a>
+        </div>
+
+        <div class="card" data-category="backend beginner">
+            <div class="card-icon"><i class="fas fa-users"></i></div>
+            <h3>User Authentication</h3>
+            <p>Implement JWT authentication</p>
+            <div class="card-tags">
+                <span class="tag">Express</span>
+                <span class="tag">JWT</span>
+            </div>
+            <a href="#" class="card-link">View Project</a>
+        </div>
+
+        <!-- Backend Projects - Intermediate -->
+        <div class="card" data-category="backend intermediate">
+            <div class="card-icon"><i class="fas fa-comments"></i></div>
+            <h3>Real-time Chat API</h3>
+            <p>Build a WebSocket-based chat server</p>
+            <div class="card-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Socket.io</span>
+            </div>
+            <a href="#" class="card-link">View Project</a>
+        </div>
+
+        <!-- Full Stack Projects -->
+        <div class="card" data-category="fullstack advanced">
+            <div class="card-icon"><i class="fas fa-blog"></i></div>
+            <h3>Blog Platform</h3>
+            <p>Complete blogging platform with CMS</p>
+            <div class="card-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">MongoDB</span>
+            </div>
+            <a href="#" class="card-link">View Project</a>
+        </div>
+
+        <!-- Continue with more projects... -->
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="logo">
+                <i class="fas fa-code-branch gradient-icon"></i>
+                <span>Dev<span class="gradient-text">Tooly</span></span>
+            </div>
+            <p>Your ultimate developer resource directory</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#roadmaps">Roadmaps</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="#extensions">Extensions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/_sumitjha_" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sumit-jha" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 DevTooly. All rights reserved.</p>
+    </div>
+</footer>
+
+<div class="author-signature">
+    <div class="built-by">Built By</div>
+    <div class="developer-name">Sumit Jha</div>
+    <div class="developer-title">{ Front-End Developer }</div>
+    <div class="developer-contacts">
+        <a href="mailto:sumitsj2002@gmail.com" class="contact-link email">
+            <i class="fas fa-envelope"></i> sumitsj2002@gmail.com
+        </a>
+        <div class="social-links">
+            <a href="https://github.com/sumitjha2001" target="_blank" class="social-link github">
+                <i class="fab fa-github"></i>
+                <span class="tooltip">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sumit-jha" target="_blank" class="social-link linkedin">
+                <i class="fab fa-linkedin"></i>
+                <span class="tooltip">LinkedIn</span>
+            </a>
+            <a href="https://x.com/_sumitjha_" target="_blank" class="social-link twitter">
+                <i class="fab fa-twitter"></i>
+                <span class="tooltip">Twitter</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
